@@ -25,7 +25,7 @@ Using this plugin:
 module.exports = {
   plugins: [
     [
-      'vuepress-plugin-export',
+      '@maiscrm/vuepress-plugin-exportpdf',
       {
         themeConfig: {
           navbar: false,
@@ -60,5 +60,5 @@ vuepress exportpdf [path/to/your/docs]
 # Note that this package is powered by [puppeteer](https://github.com/GoogleChrome/puppeteer), if you are in a mysterious wall, consider setting this [environment variables](https://github.com/GoogleChrome/puppeteer/blob/v1.11.0/docs/api.md#environment-variables) before installation.
 export PUPPETEER_DOWNLOAD_HOST=https://npm.taobao.org/mirrors
 yarn install
-yarn export
+yarn exportpdf
 ```

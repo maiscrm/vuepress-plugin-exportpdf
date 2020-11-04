@@ -10,7 +10,7 @@ const findPage = (path, pages) => {
   if (!path.startsWith('/')) {
     path = `/${path}`;
   }
-  return pages.find((page) => page.path === `${path.endsWith('/') ? path : `${path}.html`}`)
+  return pages.find((page) => page.regularPath === `${path.endsWith('/') ? path : `${path}.html`}`)
 };
 
 const buildExportPageByPath = (path, baseUrl, pages, tempDir, children = []) => {
