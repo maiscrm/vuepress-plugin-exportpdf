@@ -2,6 +2,13 @@
   "name": "@maiscrm/vuepress-plugin-exportpdf",
   "description": "Export your VuePress site to a PDF file with outline",
   "main": "index.js",
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin",
+    "pdf",
+    "outline",
+    "pdf-lib"
+  ],
   "files": [
     "libs",
     "index.js"
@@ -11,6 +18,11 @@
     "test": "jest",
     "release": "release-it"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maiscrm/vuepress-plugin-exportpdf"
+  },
+  "homepage": "https://github.com/maiscrm/vuepress-plugin-exportpdf",
   "license": "MIT",
   "dependencies": {
     "pdf-lib": "^1.9.0",
@@ -33,5 +45,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "0.1.1"
 }
