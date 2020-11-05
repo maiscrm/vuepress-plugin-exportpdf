@@ -73,7 +73,11 @@ module.exports = async (ctx, baseUrl) => {
       children: [],
     }));
   }
-  const browser = await puppeteer.launch();
+
+  // https://github.com/puppeteer/puppeteer/issues/3698#issuecomment-504648941
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+  });
   const browserPage = await browser.newPage();
 
   await generateSubPdfs(exportPages, browserPage);
