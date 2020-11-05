@@ -1,3 +1,12 @@
+<a name="0.1.3"></a>
+# 0.1.3(2020-11-05)
+
+
+### Bug Fixes
+
+* **puppeteer:** support run as root ([c51da85](https://github.com/maiscrm/vuepress-plugin-exportpdf/commit/c51da85))
+
+
 <a name="0.1.2"></a>
 # 0.1.2 (2020-11-04)
 
